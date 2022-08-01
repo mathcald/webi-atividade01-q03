@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <h1> Informações </h1>
+        <form autocomplete="on" method="POST">
+            <fieldset>
+                <legend>Cadastro do cliente</legend>
+
+                <label for="texto">Nome:</label>
+                <input type="text" name="texto">
+                
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo"> Masculino
+                    <input type="radio" name="sexo"> Feminino
+                </div>
+
+                <label for="texto">Idade:</label>
+                <input type="number" name="idade" >
+                <br>
+                <label for="endereco">Endereço</label>
+                <input type="textarea" name="endereco">
+                
+                <div>
+                    <label for="estado">Estado: </label>
+                    <select name="estado">    
+                        <option value="">UF</option>
+                        <option value="ac">Acre</option>
+                        <option value="pa">Pará</option>
+                        <option value="ce">Ceará</option>
+                    </select>
+                </div>    
+
+                <label for="CEP">CEP: </label>
+                <input type="textarea" name="CEP" id="cep">
+                <br>
+                <label for="contato-1">Tel/Res:  </label> 
+                <input type="number" id="contato-1">
+                <br>
+                <label for="contato-2">Tel/Cel: </label>  
+                <input type="number" id="contato-2">
+                <br>
+                <label for="email">email: </label> 
+                <input type="text" name="email" id="">
+
+
+                
+            </fieldset>
+                <button formaction="http://localhost:3003/usuarios"> Incluir </button>
+        </form>
+    </main>
+    
+</body>
+</html>
